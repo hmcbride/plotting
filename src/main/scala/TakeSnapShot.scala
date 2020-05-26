@@ -16,14 +16,12 @@ import scalafx.scene.{Node, Scene}
 
 object TakeSnapshot {
   def main(args: Array[String]) {
-    JFXApp.launch(classOf[TakeSnapshot], args: _*)
+  //  TakeSnapshot.launch(classOf[TakeSnapshot], args: _*)
   }
 }
 
 
 class TakeSnapshot extends JFXApp {
-
-
 
 
   stage = new JFXApp.PrimaryStage {
@@ -67,8 +65,8 @@ class TakeSnapshot extends JFXApp {
   val BUCKET_NAME = "testbuckethmb"
   val FILE_PATH = "/Users/hughmcbride/IdeaProjects/plotting/ScatterChart.png"
   val FILE_NAME = "scatterchart.png"
-  val AWS_ACCESS_KEY = "AKIAYZHEH6JPYBZOALXX"
-  val AWS_SECRET_KEY = "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"
+  val AWS_ACCESS_KEY = ""
+  val AWS_SECRET_KEY = ""
 
   try {
     val awsCredentials = new BasicAWSCredentials(AWS_ACCESS_KEY, AWS_SECRET_KEY)
@@ -131,3 +129,5 @@ class TakeSnapshot extends JFXApp {
     )
 
 }
+
+
